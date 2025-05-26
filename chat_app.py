@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import uuid
 
-st.set_page_config(page_title="💬 Chat com n8n", page_icon="💬", layout="centered")
+st.set_page_config(page_title="🤖 Chat com o labFlix", page_icon="💬", layout="centered")
 
 # Inicializa sessão e mensagens
 if "mensagens" not in st.session_state:
@@ -36,7 +36,7 @@ if mensagem:
     st.session_state["mensagens"].append(("Assistente", resposta))
 
 # Exibe mensagens (ordem natural: antigas em cima, novas embaixo)
-st.title("💬 Chat com n8n")
+st.title("💬 Chat com o labFlix")
 chat_container = st.container()
 
 with chat_container:
